@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>好用的浏览器拓展-Kiwi浏览器</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="test"></div>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+<script>    
+    $(function(){    
+        $.ajax({    
+            //请求方式    
+            type:"GET",    
+            //文件位置    
+            url:"data.json",  
+            //返回数据格式为json,也可以是其他格式如    
+            dataType: "json",    
+            //请求成功后要执行的函数，拼接html    
+            success: function(data){    
+                var str="<table>"; 
+				str+="<caption>好用的浏览器拓展-Kiwi浏览器</caption>";
+				str+="<tbody>"; 
+					str+="<tr>";  
+                    str+="<th>"+"名称："+"</th>";  
+                    str+="<th>"+"作者："+"</th>";  
+                    str+="<th>"+"描述："+"</th>";  
+					str+="<th>"+"谷歌浏览器商店："+"</th>";  
+					str+="<th>"+"官方网站："+"</th>"; 
+					str+="<th>"+"Github："+"</th>"; 
+					str+="<th>"+"类别："+"</th>"; 
+					str+="</tr>";
+                $.each(data,function(i,n){ 
+					str+="<tr>";
+					str+="<td>"+n.name+"</td>";
+					str+="<td>"+n.author+"</td>";
+					str+="<td>"+n.description+"</td>";
+					if(n.cwsurl!=''){
+					str+="<td><a href="+n.cwsurl+">访问</a></td>";	
+					}
+					else{
+						str+="<td>无</td>";
+					}
+					if(n.officialurl!=''){
+					str+="<td><a href="+n.cwsurl+">访问</a></td>";	
+					}
+					else{
+						str+="<td>无</td>";
+					}
+					if(n.githuburl!=''){
+					str+="<td><a href="+n.cwsurl+">访问</a></td>";	
+					}
+					else{
+						str+="<td>无</td>";
+					}
+					str+="<td>"+n.category+"</td>";
+					str+="</tr>";  
+					str+="</tbody>"; 
+                });    
+                str+="</table>";  
+				
+                $("div").append(str);    
+            }    
+        });    
+    });    
+</script>
+
+		
+
+</body>
+</html>

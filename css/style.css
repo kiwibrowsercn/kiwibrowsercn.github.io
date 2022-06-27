@@ -1,0 +1,239 @@
+body,html {
+	height: 100%;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-weight: 400
+}
+
+a {
+	text-decoration: none;
+	color: #5b7fb9
+}
+
+a:hover {
+	text-decoration: underline
+}
+
+img {
+	max-width: 100%
+}
+
+@media screen and (min-width:35.5em) {
+	.container {
+		max-width: 35.5em
+	}
+}
+
+@media screen and (min-width:48em) {
+	.container {
+		max-width: 48em
+	}
+}
+
+@media screen and (min-width:64em) {
+	.container {
+		max-width: 64em
+	}
+}
+
+@media screen and (min-width:80em) {
+	.container {
+		max-width: 64em
+	}
+}
+
+.container {
+	margin: auto;
+	text-align: center;
+	padding: 40px 16px;
+	box-sizing: border-box
+}
+
+.fullscreen {
+	height: 100%;
+	min-height: 450px;
+	-ms-flex-align: center!important;
+	align-items: center!important
+}
+
+.align-center {
+	-ms-flex-align: center!important;
+	align-items: center!important;
+	padding-top: 60px;
+	padding-bottom: 60px
+}
+
+.box-title,.box-title-center {
+	position: relative;
+	padding-bottom: 32px;
+	text-align: left
+}
+
+.box-title-center:after,.box-title-center:before,.box-title:after,.box-title:before {
+	display: block;
+	content: '';
+	height: 1px;
+	background: #ccc;
+	position: absolute
+}
+
+.box-title-center:before,.box-title:before {
+	width: 80px;
+	bottom: 7px
+}
+
+.box-title-center:after,.box-title:after {
+	width: 60px;
+	bottom: 0
+}
+
+.box-title-center {
+	text-align: center
+}
+
+.box-title-center:before {
+	left: 50%;
+	margin-left: -40px
+}
+
+.box-title-center:after {
+	left: 50%;
+	margin-left: -30px
+}
+
+.screenshot {
+	max-width: 100%
+}
+
+.text-title,.text-title-lg,.text-title-sm {
+	letter-spacing: -.5px
+}
+
+.text-title-sm {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333;
+	line-height: 1.3
+}
+
+.text-title,.text-title-lg {
+	color: #000;
+	font-weight: 700
+}
+
+.text-title {
+	font-size: 30px;
+	line-height: 1.2
+}
+
+.text-title-lg {
+	font-size: 50px;
+	line-height: 1.1
+}
+
+.text-content {
+	color: #666;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+	letter-spacing: .5px
+}
+
+.left {
+	text-align: left
+}
+
+.right {
+	text-align: right
+}
+
+.center {
+	text-align: center
+}
+
+@media only screen and (min-width:48em) {
+	#app-box-screenshot {
+		display: block
+	}
+}
+
+@media only screen and (max-width:48em) {
+	#app-box-screenshot {
+		display: none
+	}
+}
+
+.app-slogan {
+	color: #fff;
+	margin-bottom: 30px
+}
+
+.app-desc {
+	color: #e5e5e5;
+	margin-bottom: 30px;
+	font-size: 16px
+}
+
+.app-download,.app-download:hover {
+	border: 1px solid #fff;
+	color: #fff;
+	background: 0 0;
+	border-radius: 2px;
+	padding: 8px 12px;
+	margin: 2px 10px 10px 2px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	min-width: 72px;
+	text-decoration: none
+}
+
+.app-download:hover {
+	background: rgba(255,255,255,.5)
+}
+
+.app-logo {
+	padding: 10px;
+	width: 600px;
+	max-width: 60%
+}
+
+.feature-desc {
+	font-size: 14px;
+	padding: 0 10px
+}
+
+.comment-content {
+	color: #333
+}
+
+.comment-content:before {
+	content: '"';
+	font-size: 35px;
+	color: #666;
+	line-height: 24px
+}
+
+.comment-avatar {
+	width: 25px;
+	height: 25px;
+	background: #333;
+	border-radius: 100%
+}
+
+.comment-author-name {
+	font-size: 14px
+}
+
+.about-content {
+	line-height: 1.8
+}
+
+.footer {
+	padding: 50px 0;
+	background: #f5f5f5
+}
+
+.footer a,.footer p {
+	font-size: 12px;
+	color: #999
+}
